@@ -2,6 +2,7 @@
    <head>
       <meta charset="UTF-8">
     <title>Сайт web-студії "Web-DECO"</title>
+    <script scr="js/clock.js"></script>
     <script type="text/javascript">
       function send()
      {
@@ -34,6 +35,10 @@
             font-size: 3em;
          }
          </style>
+         <script>
+            wind.onload = function() {
+            setInterval(clockPainting, 1000); }
+         </script>
     </head>
     <body backround = "images/bg.jpg">
          <table border="1" align="center" cellpadding="10">
@@ -45,6 +50,7 @@
                   </td>
             </tr>
             <tr>
+               <center><canvas id="canvas" height="120" width="120"></canvas></center>
                   <td colspan="2">
                      <font size="4"><b>
                         <a href="#">Головна</a>&nbsp;&nbsp;
